@@ -23,11 +23,11 @@ struct Node
 class List
 {
 public:
-	friend ostream &operator<<(ostream &output, const List &that);
+	friend ostream &operator<<(ostream &, const List &);
 	List();
 	~List();
 	bool isEmpty(void);
-	void addFirst(int data);
+	void addFirst(int);
 	int getFirst(void);
 	int removeFirst(void);
 private:
